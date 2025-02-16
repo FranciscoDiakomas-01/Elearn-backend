@@ -1,0 +1,15 @@
+BEGIN;
+
+CREATE TABLE users IF NOT EXISTS (
+  id SERIAL PRIMARY KEY NOT NULL,
+  firstName VARCHAR(20) NOT NULL,
+  lastName  VARCHAR(20) NOT NULL,
+  password  TEXT NOT NULL,
+  email  VARCHAR(20) NOT NULL UNIQUE,
+  type  VARCHAR(4) NOT NULL,
+  createdAt DATE DEFAULT now(),
+  updatedAt DATE
+);
+
+
+COMMIT;
