@@ -1,7 +1,12 @@
 export default interface IProof {
   id: number;
-  dateStart: string;
-  dateEnd: string;
+  moduleid: number;
+  title: string;
+  description: string;
+  datestart: string;
+  deteend: string;
   createdAt: string;
   updatedAt: string;
+  status: boolean;
+  totalquiz: number;
 }

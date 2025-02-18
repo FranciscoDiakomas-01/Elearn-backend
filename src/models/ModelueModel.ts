@@ -3,8 +3,12 @@ export default interface IModel {
   courseId: number;
   title: string;
   description: string;
-  cover?: string;
+  price : number,
+  ordernum : number,
+  cover: string;
   totalLessons: number;
   createdAt: string;
   updatedAt: string;
+  status : boolean
+  
 }

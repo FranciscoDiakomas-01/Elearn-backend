@@ -1,9 +1,11 @@
 export default interface ILessons {
   id: number;
-  modelId: number;
+  moduleid: number;
   title: string;
-  content: string;
+  description: string;
   midiaURL: string;
   createdAt: string;
   updatedAt: string;
+  type: string;
+  status: boolean;
 }

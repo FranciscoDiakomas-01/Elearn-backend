@@ -1,7 +1,9 @@
 export default interface IFeedBack {
-  id : string,
-  studentId : number
-  stars : number
-  createdAt: string;
-  updatedAt: string;
+  id: number;
+  stars: number;
+  studentid: number;
+  content: number;
+  createdAt?: string;
+  updatedAt?: string;
+  status: boolean;
 }
